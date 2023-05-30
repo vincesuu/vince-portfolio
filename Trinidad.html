@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Slab:wght@100&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Gloock&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.3;
+        color: white;
+      }
+
+      h1 {
+        font-family: "Outfit", sans-serif;
+        color: #333;
+        text-align: center;
+        font-size: 6rem;
+      }
+
+      h2 {
+        font-family: "Outfit", sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+      }
+
+      p {
+        font-family: "Outfit", sans-serif;
+        color: white;
+        text-align: center;
+      }
+
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom-style: groove;
+        border-color: #333;
+        background: white;
+        z-index: 10;
+      }
+
+      #front_page {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(90, 90, 90, 0.3);
+      }
+
+      .mapa {
+        width: 65.6vw;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: 37vw;
+      }
+
+      .info_sq {
+        position: fixed;
+        right: 20px;
+        bottom: 250px;
+        width: 20vw;
+        height: 40vh;
+        border-radius: 10px;
+        background-color: rgb(129, 114, 114);
+      }
+
+      area:hover {
+        cursor: pointer;
+      }
+
+      area[title]:hover:after {
+        content: attr(title);
+        padding: 20px;
+        color: #fff;
+        background-color: #333;
+        position: fixed;
+        z-index: 9999;
+        left: 81%;
+        top: 46%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        font-size: 25px;
+      }
+
+      .info_sq {
+        position: fixed;
+        padding-top: 35px;
+        padding-right: 30px;
+        padding-left: 30px;
+        right: 26px;
+        top: 250px;
+        width: 35vw;
+        height: 18vh;
+        border-radius: 10px;
+        background-color: #444;
+      }
+    </style>
+
+    <script>
+      $(document).ready(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
+  </head>
+
+  <body>
+    <section id="Front_page">
+      <div class="info_sq">
+        <br />
+        <h2>Hover on a municipality to know more!</h2>
+      </div>
+      <div id="bohol-map">
+        <img
+          class="mapa"
+          src="https://ppdo.bohol.gov.ph/ppdofiles/Maps/MunicipalMaps/Trinidad/StatisticalMaps/JPGs/Statistical%20-%20Population%20Temporal%20Change%201990-1995%20A4%20Landscape.jpg"
+          alt="map"
+          usemap="#map"
+        />
+
+        <map name="map">
+          <area
+            shape="circle"
+            coords="548, 590 , 40"
+            alt="Banlasan"
+            title="BANLASAN - Population: 1, 368 Households: 251 "
+            href="https://www.philatlas.com/visayas/r07/bohol/trinidad/banlasan.html"
+          />
+          <area
+          shape="circle"
+          coords="680, 650, 40"
+          alt="Bongbong"
+          title="BONGBONG - Population: 1, 320 Households: 240 "
+          href="https://www.philatlas.com/visayas/r07/bohol/trinidad/bongbong.html"
+        />
+        <area
+        shape="circle"
+        coords="1140, 500, 40"
+        alt="Catoogan"
+        title="CATOOGAN - Population: 1, 059 Households: 220 "
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/catoogan.html"
+      />
+      <area
+      shape="circle"
+      coords="850, 350, 40"
+      alt="Guinobatan"
+      title="GUINOBATAN - Population: 2, 410 Households: 471 "
+      href="https://www.philatlas.com/visayas/r07/bohol/trinidad/guinobatan.html"
+    />
+    <area
+    shape="circle"
+    coords="820, 545, 50"
+    alt="Hinlayagan Ilaud"
+    title="HINLAYAGAN ILAUD - Population: 1, 218 Households: 240 "
+    href="https://www.philatlas.com/visayas/r07/bohol/trinidad/hinlayagan-ilaud.html"
+  />
+  <area
+  shape="circle"
+  coords="765, 600, 50"
+  alt="Hinlayagan Ilaya"
+  title="HINLAYAGAN ILAYA - Population: 2, 449  Households: 435 "
+  href="https://www.philatlas.com/visayas/r07/bohol/trinidad/hinlayagan-ilaya.html"
+  />
+  <area
+  shape="circle"
+  coords="280, 640, 40"
+  alt="Kauswagan"
+  title="KAUSWAGAN - Population: 2, 597 Households: 520"
+  href="https://www.philatlas.com/visayas/r07/bohol/trinidad/kauswagan.html"
+/>
+<area
+shape="circle"
+coords="660, 460, 35"
+alt="Kinan-oan"
+title="KINAN-OAN - Population: 1, 644 Households: 318 "
+href="https://www.philatlas.com/visayas/r07/bohol/trinidad/kinan-oan.html"
+/>
+<area
+shape="circle"
+coords="940, 445, 40"
+alt="La Union"
+title="LA UNION - Population: 2, 142 Households: 422"
+href="https://www.philatlas.com/visayas/r07/bohol/trinidad/la-union.html"
+      />
+      <area
+        shape="circle"
+        coords="870, 230, 40"
+        alt="La Victoria"
+        title="LA VICTORIA - Population: 1, 554 Households: 374"
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/la-victoria.html"
+      />
+      <area
+        shape="circle"
+        coords="790, 470, 50"
+        alt="Mabuhay Cabigohan"
+        title="MABUHAY CABIGOHAN - Population: 1, 329 Households: 269 "
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/mabuhay-cabigohan.html"
+      />
+      <area
+        shape="circle"
+        coords="1020, 570, 40"
+        alt="Mahagbu"
+        title="MAHAGBU - Population:1,289  Households:245 "
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/mahagbu.html"
+      />
+      <area
+        shape="circle"
+        coords="905, 600, 40"
+        alt="Manuel M. Roxas"
+        title="MANUEL M. ROXAS - Population:1, 189  Households: 247"
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/manuel-m-roxas.html"
+      />
+      <area
+        shape="circle"
+        coords="750, 340, 40"
+        alt="Poblacion"
+        title="POBLACION - Population:3,778  Households: 757"
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/poblacion.html"
+      />
+      <area
+        shape="circle"
+        coords="455, 710, 40"
+        alt="San Isidro"
+        title="SAN ISIDRO - Population:627  Households:98 "
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/san-isidro.html"
+      />
+      <area
+        shape="circle"
+        coords="415, 430, 40"
+        alt="San Vicente"
+        title="SAN VICENTE - Population:2,343 Households:397 "
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/san-vicente.html"
+      />
+      <area
+        shape="circle"
+        coords="650, 520, 40"
+        alt="Santo Tomas"
+        title="SANTO TOMAS - Population:1,165  Households:234 "
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/santo-tomas.html"
+      />
+      <area
+        shape="circle"
+        coords="1080, 420, 30"
+        alt="Soom"
+        title="SOOM - Population:2,411  Households:440"
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/soom.html"
+      />
+      <area
+        shape="circle"
+        coords="972, 260, 40"
+        alt="Tagum Norte"
+        title="TAGUM NORTE - Population:1,595  Households:357 "
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/tagum-norte.html"
+      />
+      <area
+        shape="circle"
+        coords="1025, 315, 40"
+        alt="Tagum Sur"
+        title="TAGUM SUR - Population:1,632  Households:322 "
+        href="https://www.philatlas.com/visayas/r07/bohol/trinidad/tagum-sur.html"
+      />
+       
+      
+        </map>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      
+      #box1 {
+        width: 200px;
+        height: 100px;
+        border: 1px solid black;
+        margin: 50px;
+        padding: 20px;
+        font-size: 1.2em; 
+        background-color: #ff00ff; 
+      }
+      #box2 {
+        width: 100px;
+        height: 50px;
+        border: 1px solid black;
+        margin: 50px;
+        padding: 10px;
+        font-size: 20px;
+        background-color: rgb(0, 255, 0); /* RGB color */
+      }
+      #box3 {
+        width: -100px; 
+        height: 50px;
+        border: 1px solid black;
+        margin: 50px;
+        padding: 10px;
+        font-size: 1.5rem; 
+        background-color: hsl(240, 100%, 50%); 
+        color: currentcolor; 
+      }
+      
+      
+      body {
+        background: url('https://picsum.photos/800/600') no-repeat fixed center center/cover; /* multiple background images with position, resizing, and horizontal display */
+        opacity: 0.8; /* opacity or image transparency */
+      }
+      #stretch {
+        background: url('https://picsum.photos/800/600') no-repeat fixed center center; /* single background image stretched to window size */
+        background-size: cover;
+        opacity: 0.5;
+      }
+      #scroll {
+        background: url('https://picsum.photos/800/600') repeat-y fixed center center; /* single background image that scrolls vertically */
+        opacity: 0.5;
+      }
+      #overlap1 {
+        background: url('https://picsum.photos/400/400') no-repeat fixed left top; /* overlapping images with horizontal display */
+      }
+      #overlap2 {
+        background: url('https://picsum.photos/400/400') no-repeat fixed right bottom;
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">Absolute and relative units</div>
+    <div id="box2">Decimal color</div>
+    <div id="box3">Negative value, HSL color, currentcolor keyword</div>
+    <div id="stretch">Single image stretched to window size</div>
+    <div id="scroll">Single image that scrolls vertically</div>
+    <div id="overlap1">Overlapping images</div>
+    <div id="overlap2">Overlapping images with opacity</div>
+  </body>
+</html>

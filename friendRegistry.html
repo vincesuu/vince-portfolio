@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Information Form</title>
+	<style>
+		form {
+			margin: 20px;
+			padding: 20px;
+			border: 1px solid black;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+		}
+		
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		
+		input[type="text"], input[type="email"], select {
+			display: block;
+			margin-bottom: 10px;
+			padding: 5px;
+			width: 100%;
+			box-sizing: border-box;
+			border-radius: 3px;
+			border: 1px solid #ccc;
+		}
+		
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+		
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+		
+		<label for="phone">Phone:</label>
+		<input type="text" id="phone" name="phone" pattern="[0-9]{10}" placeholder="e.g. 1234567890">
+		
+		<label for="birthday">Birthday:</label>
+		<input type="date" id="birthday" name="birthday">
+		
+		<label for="gender">Gender:</label>
+		<select id="gender" name="gender">
+			<option value="">Choose gender...</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+		
+		<label for="interests">Interests:</label>
+		<input type="text" id="interests" name="interests">
+		
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

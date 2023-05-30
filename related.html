@@ -1,0 +1,464 @@
+<!Doctype html>
+<head>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+      }
+  
+      *,
+      *::before,
+      *::after {
+        box-sizing: inherit;
+      }
+  
+      html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+        scroll-behavior: smooth;
+      }
+  
+      body {
+        font-family: "Outfit", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 400;
+        line-height: 1.3;
+        color: rgb(0, 0, 0);
+        background-color: rgb(182, 182, 182);
+      }
+  
+      h1,
+      h2 {
+        font-family: "Monaco", 'Courier New', Courier, monospace;
+        color: #000000;
+        text-align: center;
+        font-size: 6rem;
+      }
+  
+      p {
+        font-family: "Outfit", sans-serif;
+        color: #333;
+        text-align: center;
+      }
+  
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+  
+      .nav {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(182, 0, 0);
+        z-index: 10;
+      }
+  
+      .nav-list {
+        display: flex;
+        margin-right: 2rem;
+      }
+  
+      .nav-list a {
+        display: block;
+        font-size: 2rem;
+        padding: 2rem;
+      }
+  
+      .nav-list a:hover {
+        background: rgb(0, 0, 0);
+        transition: background 0.3s;
+      }
+  
+      .nav-list img {
+        width: 1.45vw;
+      }
+  
+      .nav-list > li {
+        list-style: none;
+        color: #fff;
+      }
+  
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+  
+      section > ul {
+        font-size: 30px;
+        color: #333;
+        font-family: "Outfit", sans-serif;
+      }
+  
+      section > h1 {
+        font-family: "Gloock", serif;
+        font-size: 80px;
+        letter-spacing: 5px;
+        margin-top: -20px;
+        text-shadow: 2px 2px rgba(90, 90, 90, 0.4);
+        color: #333;
+      }
+  
+      footer {
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgb(182, 1, 1);
+        z-index: 10;
+      }
+  
+      .uparrow {
+        transform: rotateZ(180deg);
+      }
+    </style>
+  
+    <base href="#welcome-section" target="_top" />
+  </head>
+  
+  <body>
+    <nav title="navigation-bar" class="nav">
+      <h2>RELATED</h2>
+      <br />
+      <ul class="nav-list">
+        <li>
+          <a href="#a">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTokXPQ2Rk2SsJaYBmRnN27Qp9JXo46bcshA&usqp=CAU"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#a">A</a>
+        </li>
+        <li>
+          <a href="#b">B</a>
+        </li>
+        <li>
+          <a href="#c">C</a>
+        </li>
+        <li>
+          <a href="#d">D</a>
+        </li>
+        <li>
+          <a href="#e">E</a>
+        </li>
+        <li>
+          <a href="#f">F</a>
+        </li>
+        <li>
+          <a href="#g">G</a>
+        </li>
+        <li>
+          <a href="#h">H</a>
+        </li>
+        <li>
+          <a href="#i">I</a>
+        </li>
+        <li>
+          <a href="#j">J</a>
+        </li>
+        <li>
+          <a href="#k">K</a>
+        </li>
+        <li>
+          <a href="#l">L</a>
+        </li>
+        <li>
+          <a href="#m">M</a>
+        </li>
+        <li>
+          <a href="#n">N</a>
+        </li>
+        <li>
+          <a href="#o">O</a>
+        </li>
+        <li>
+          <a href="#p">P</a>
+        </li>
+        <li>
+          <a href="#q">Q</a>
+        </li>
+        <li>
+          <a href="#r">R</a>
+        </li>
+        <li>
+          <a href="#s">S</a>
+        </li>
+        <li>
+          <a href="#t">T</a>
+        </li>
+        <li>
+          <a href="#u">U</a>
+        </li>
+        <li>
+          <a href="#v">V</a>
+        </li>
+        <li>
+          <a href="#w">W</a>
+        </li>
+        <li>
+          <a href="#x">X</a>
+        </li>
+        <li>
+          <a href="#y">Y</a>
+        </li>
+        <li>
+          <a href="#z">Z</a>
+        </li>
+        <li>
+          <a href="#v">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_c_ElbRQQFWjcUOzkVYuZ4CNKqVeQ_Kaqo13GsiB-LMzEEnENeQPfpOy8rsDlBC3_gIM&usqp=CAU"
+            />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  <p style="background-image: url('https://c8.alamy.com/comp/MJH8PM/data-visualization-background-futuristic-design-hud-element-binary-code-coding-and-programming-concept-MJH8PM.jpg');">
+    <section title="letter A" id="a">
+      <h1>A</h1>
+      <ul>
+        <li>ABATON, JOHN CARLO T.</li>
+        <li>AGOPITAC, CHRISTIAN JOSEPH R.</li>
+        <li>AMPER, KIAN JAYMARK</li>
+        <li>AUTOR, CLINT</li>
+      </ul>
+    </section>
+    <section title="letter B" id="b">
+      <h1>B</h1>
+      <ul>
+        <li>BALABAT, NEREY P.</li>
+        <li>BALATAYO, MARK REYNALD L.</li>
+        <li>BAUGBOG, JOY MILDRED T.</li>
+        <li>BILLION, JELON II L.</li>
+        <li>BULLEN, JULIANNE P.</li>
+      </ul>
+    </section>
+    <section title="letter C" id="c">
+      <h1>C</h1>
+      <ul>
+        <li>CABILOGAN, CHARLES REY S.</li>
+        <li>CAGATIN, JOMARK M.</li>
+        <li>CAÑONERO, PABLITO JR. D.</li>
+        <li>CAPACITE, CZAR PAOLO M.</li>
+        <li>CAPILI, ROD VINCENT O.</li>
+        <li>CLORIBEL, ELLEXERYE S.</li>
+      </ul>
+    </section>
+    <section title="letter D" id="d">
+      <h1>D</h1>
+      <ul>
+        <li>DAPITILLA, JAN NIÑO C.</li>
+        <li>DAPITON, CHIM EDGAR A.</li>
+        <li>DAQUE, LORAINE MAE B.</li>
+        <li>DEGAMO, RHEE ANGELA B.</li>
+        <li>DOBLAS, KRIZIA F.</li>
+        <li>DULALAS, BIL CLINTH A.</li>
+        <li>DURANG, JHON REYNOLD C.</li>
+      </ul>
+    </section>
+    <section title="letter E" id="e">
+      <h1>E</h1>
+      <ul>
+        <li>EGAM, LEO S.</li>
+        <li>ENOVERO, JOSHUA BRIAN S.</li>
+        <li>ESPAÑA, JAMES H.</li>
+      </ul>
+    </section>
+    <section title="letter F" id="f">
+      <h1>F</h1>
+      <ul>
+        <li>FELISILDA, HEZEKIAH ANNE C.</li>
+        <li>FEROLINO, ZACHARY BRICX B.</li>
+      </ul>
+    </section>
+    <section title="letter J" id="j">
+      <h1>J</h1>
+      <ul>
+        <li>JABINES, CLIFF RAYCEE B.</li>
+      </ul>
+    </section>
+    <section title="letter L" id="l">
+      <h1>L</h1>
+      <ul>
+        <li>LACSADO, JOHN PAUL R.</li>
+        <li>LLAMADO, WAYNE ROLD ALLEN N.</li>
+        <li>LOMANTAS, LORENZ MYRRH</li>
+        <li>LUMAYAG, RHEA A.</li>
+      </ul>
+    </section>
+    <section title="letter M" id="m">
+      <h1>M</h1>
+      <ul>
+        <li>MAGNO, ARTURO JOSE T.</li>
+        <li>MAMAC, JEHU I.</li>
+        <li>MANUEL, JOSHUA JOSEPH R.</li>
+      </ul>
+    </section>
+    <section title="letter O" id="o">
+      <h1>O</h1>
+      <ul>
+        <li>OLIVEROS, ROWILL E.</li>
+        <li>OMAC, RALPH CHRISTIAN L.</li>
+      </ul>
+    </section>
+    <section title="letter P" id="p">
+      <h1>P</h1>
+      <ul>
+        <li>PAYOT, VINCE GERARD L.</li>
+        <li>PRONTES, CEE-JAY J.</li>
+      </ul>
+    </section>
+    <section title="letter Q" id="q">
+      <h1>Q</h1>
+      <ul>
+        <li>QUIJADA, LEONARD ANTHONY C.</li>
+      </ul>
+    </section>
+    <section title="letter R" id="r">
+      <h1>R</h1>
+      <ul>
+        <li>REVILLES, KATE ASHLEY P.</li>
+        <li>REYES, JEFF BRYLE G.</li>
+      </ul>
+    </section>
+    <section title="letter S" id="s">
+      <h1>S</h1>
+      <ul>
+        <li>SUPREMO, EDREAN R.</li>
+      </ul>
+    </section>
+    <section title="letter T" id="t">
+      <h1>T</h1>
+      <ul>
+        <li>TABARANZA, JEANALEN B.</li>
+        <li>TAC-AN, MA. JANICE B.</li>
+        <li>TAGAILO, ZALME P.</li>
+        <li>TAGURAN, JOHN CLAIDY KEN O.</li>
+        <li>TIEMPO, MICHAEL D.</li>
+        <li>TIONGSON, JOHN LOUIE S.</li>
+        <li>TORILLO, MARK ALLAN B.</li>
+      </ul>
+    </section>
+    <section title="letter V" id="v">
+      <h1>V</h1>
+      <ul>
+        <li>VELOSO, DON ALLEN T.</li>
+        <li>VILLAPAZ, MATT DOMENIK S.</li>
+        <li>VITOR, JILROY</li>
+      </ul>
+    </section>
+    </p>
+  
+    <footer>
+      <ul class="nav-list">
+        <li>
+          <a href="#a">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTokXPQ2Rk2SsJaYBmRnN27Qp9JXo46bcshA&usqp=CAU"
+            />
+          </a>
+        </li>
+        <li>
+          <a href="#a">A</a>
+        </li>
+        <li>
+          <a href="#b">B</a>
+        </li>
+        <li>
+          <a href="#c">C</a>
+        </li>
+        <li>
+          <a href="#d">D</a>
+        </li>
+        <li>
+          <a href="#e">E</a>
+        </li>
+        <li>
+          <a href="#f">F</a>
+        </li>
+        <li>
+          <a href="#g">G</a>
+        </li>
+        <li>
+          <a href="#h">H</a>
+        </li>
+        <li>
+          <a href="#i">I</a>
+        </li>
+        <li>
+          <a href="#j">J</a>
+        </li>
+        <li>
+          <a href="#k">K</a>
+        </li>
+        <li>
+          <a href="#l">L</a>
+        </li>
+        <li>
+          <a href="#m">M</a>
+        </li>
+        <li>
+          <a href="#n">N</a>
+        </li>
+        <li>
+          <a href="#o">O</a>
+        </li>
+        <li>
+          <a href="#p">P</a>
+        </li>
+        <li>
+          <a href="#q">Q</a>
+        </li>
+        <li>
+          <a href="#r">R</a>
+        </li>
+        <li>
+          <a href="#s">S</a>
+        </li>
+        <li>
+          <a href="#t">T</a>
+        </li>
+        <li>
+          <a href="#u">U</a>
+        </li>
+        <li>
+          <a href="#v">V</a>
+        </li>
+        <li>
+          <a href="#w">W</a>
+        </li>
+        <li>
+          <a href="#x">X</a>
+        </li>
+        <li>
+          <a href="#y">Y</a>
+        </li>
+        <li>
+          <a href="#z">Z</a>
+        </li>
+        <li>
+          <a href="#a">
+            <img
+              class="uparrow"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_c_ElbRQQFWjcUOzkVYuZ4CNKqVeQ_Kaqo13GsiB-LMzEEnENeQPfpOy8rsDlBC3_gIM&usqp=CAU"
+            />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  
