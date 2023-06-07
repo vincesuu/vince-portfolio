@@ -1,107 +1,101 @@
 <!doctype html>
 <html>
 <head>
-  <title>
-    <p>Friend Registry<p>
-    </title>
-    <style> 
-  font-family: "Lucida Console", "Courier New", monospace;
-    </style>
-    <style>
-        
-.colorful-form {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f5f5f5;
-  border-radius: 10px;
-}
+  <title>Friend Registry</title>
+  <style>
+    body {
+      font-family: "Lucida Console", "Courier New", monospace;
+    }
 
-.form-group {
-  margin-bottom: 20px;
-}
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+    }
 
-.form-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
-}
+    .form-group {
+      margin-bottom: 20px;
+    }
 
-.form-input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #fff;
-  color: #333;
-  border-radius: 5px;
-}
+    .form-label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+    }
 
-textarea.form-input {
-  height: 100px;
-}
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #fff;
+      color: #333;
+      border-radius: 5px;
+    }
 
-.form-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #ff6f69;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+    textarea.form-input {
+      height: 100px;
+    }
 
-.form-button:hover {
-  background-color: #ff5f59;
-}
+    .form-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ff6f69;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
 
+    .form-button:hover {
+      background-color: #ff5f59;
+    }
 
-    </style>
-  </head>
-  <body>
-<center><h1> FRIEND REGISTRY</h1></center>
-<form action="https://script.google.com/macros/s/AKfycbxeplDsjKnRNWJGWB68FPBPm6tFqwMW3RMysQWUS7Cs_5zrmCoJ49cT-Dl8oGQPrfgU/exec" method="post">
-<form class="colorful-form">
-  <div class="form-group">
-    <label class="form-label" for="name">Name:</label>
-    <input required="" placeholder="Enter your name" class="form-input" type="text">
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Friend Registry</h1>
+    <form action="https://script.google.com/macros/s/AKfycbxeplDsjKnRNWJGWB68FPBPm6tFqwMW3RMysQWUS7Cs_5zrmCoJ49cT-Dl8oGQPrfgU/exec" method="post">
+      <div class="form-group">
+        <label class="form-label" for="name">Name:</label>
+        <input required="" placeholder="Enter your name" class="form-input" type="text">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="email">Email:</label>
+        <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" pattern="[0-9]{11}" placeholder="e.g. 1234567890">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="">Choose gender...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label" for="message">Hobby:</label>
+        <textarea required="" placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
+      </div>
+      <button class="form-button" type="submit">Submit</button>
+    </form>
   </div>
-  <div class="form-group">
-    <label class="form-label" for="email">Email:</label>
-    <input required="" placeholder="Enter your email" class="form-input" name="email" id="email" type="email">
-  </div>
-  
-  <div>
-    <label for="phone">Phone:</label>
-		<input type="text" id="phone" name="phone" pattern="[0-9]{11}" placeholder="e.g. 1234567890">
-		
-  </div>
-
-  <div><p>
-    <label for="birthday">Birthday:</label>
-		<input type="date" id="birthday" name="birthday">
-		</p>
-  </div>
-  <div><p>
-    <label for="gender">Gender:</label>
-		<select id="gender" name="gender">
-			<option value="">Choose gender...</option>
-			<option value="male">Male</option>
-			<option value="female">Female</option>
-			<option value="other">Other</option>
-		</select>
-        </p>
-  </div>
-  
-  <div class="form-group">
-    <label class="form-label" for="message">Hobby:</label>
-    <textarea required="" placeholder="Enter your message" class="form-input" name="message" id="message"></textarea>
-  </div>
-  <button class="form-button" type="submit">Submit</button>
-	</form>
-</form>
 </body>
-
 </html>
